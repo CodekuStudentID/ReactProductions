@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.css'; // pastikan Tailwind directives ada di sini
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Apps from './Pages/App';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Halaman-halaman utama kamu
+import Apps from './Pages/App';     // Pastikan default export di App.jsx
 import About from './Pages/About';
 import Mail from './Pages/Mail';
 
+// Mounting root React
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -20,7 +23,5 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Optional: performance monitoring
 reportWebVitals();

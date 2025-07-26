@@ -30,7 +30,7 @@ export default function BottomNavigations({children}) {
         showLabels
         >
           <BottomNavigationAction
-          label="Recents"
+          label="About"
           icon={<PersonIcon />}
           value={"/"}
           component={Link}
@@ -38,7 +38,7 @@ export default function BottomNavigations({children}) {
           />
 
           <BottomNavigationAction
-          label="Favorites"
+          label="Projects"
           icon={<ArticleIcon />}
           value="/about"
           component={Link}
@@ -46,7 +46,7 @@ export default function BottomNavigations({children}) {
           />
 
           <BottomNavigationAction
-          label="Archive"
+          label="Contacts"
           icon={<ContactMailIcon />}
           value="/contacts"
           component={Link}
